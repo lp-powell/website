@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta charset="windows-1252">
+  <title>Lucas Powell - Portfolio</title>
+  <style>
+    body {
+      font-family: Times New Roman, serif;
+      /* background-color: #c8b99a;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%23c8b99a'/%3E%3Crect x='0' y='0' width='40' height='40' fill='%23bf9a6a' opacity='0.35'/%3E%3Crect x='40' y='40' width='40' height='40' fill='%23bf9a6a' opacity='0.35'/%3E%3C/svg%3E");
+      background-repeat: repeat; */
+      background-image: url("images/steel.jpg");
+      background-repeat: repeat;
+      color: #000000;
+    }
+    a:link    { color: #0000ff; }
+    a:visited { color: #880000; }
+    a:hover   { color: #0000cc; }
+
+    table.nav {
+      border: 1px solid #000080;
+      border-collapse: collapse;
+      background-color: #ffffe1;
+      float: left;
+      margin-right: 14px;
+      margin-bottom: 8px;
+      width: 140px
+    }
+    table.nav td {
+      border: 1px solid #000080;
+      padding: 3px 6px;
+    }
+    td.nav-header {
+      background-color: #0033cc;
+      text-align: center;
+    }
+    td.nav-subject {
+      background-color: #e6ffff;
+      text-align: center;
+    }
+    td.nav-links {
+      background-color: #ffffd7;
+      text-align: left;
+    }
+    td.nav-links a {
+      font-family: Arial, sans-serif;
+      font-size: small;
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    .rbline {
+      height: 4px;
+      background: linear-gradient(90deg, #001f5b, #0044cc, #4d9fff, #ffffff, #4d9fff, #0044cc, #001f5b);
+      border: none;
+      width: 540px;
+      max-width: 100%;
+      margin: 12px auto;
+      display: block;
+    }
+
+    .main-content { overflow: hidden; }
+  </style>
+</head>
+
+<body>
+
+<div id="nav"></div>
+<script>
+  fetch("nav.html").then(r => r.text()).then(h => document.getElementById("nav").innerHTML = h);
+</script>
+
+
+<p align="center">
+<img src="images/lpTop.png" width="500"><br>
+  <!-- <font color="#0000ff" face="Arial" size="6"><b><i>Lucas Powell</i></b></font><br> -->
+  <font face="Arial" size="4">Mechanical Engineer &mdash; Cleveland, Ohio</font>
+</p>
+
+<p align="center">
+  Last Updated:
+  <script>document.write(new Date().toLocaleDateString('en-US',{month:'2-digit',day:'2-digit',year:'numeric'}));</script>
+</p>
+
+<hr class="rbline">
+
+<div class="main-content">
+
+  <p><b>ABOUT ME</b>.... Hello, I'm <b>Lucas Powell</b>. I'm a mechanical engineer at Case Western Reserve University. I am a member of my university's SAE Baja team, 
+    working on the drivetrain, frame and test engineering team. For the team, I have worked on u-joints, frame weld fixturing, FEA validation, and system test design.
+     I have also worked at BD medical as an engineering intern, working on manufacturing line improvements and participating in internal kaizen events. Another previous 
+     job was with Tylok International, where I both worked on the manufacturing floor, and in the design and research department. More information about all the projects 
+     mentioned can be found on the projects page. I have manufacturing experience machining with a lathe, mill, CNC router, and Waterjet as 
+     well as rapid prototyping with 3d printing, casting and injection molding. On the software side I can use SolidWorks, Siemens NX, Fusion 360, LS-Dyna and Ansys mechanical. I also have some experience with micro-controllers, control circuits and programming languages like C, MATLAB and python. </p>
+
+     <p> I am interested in test engineering, alternative power and motorsports. At Tylok I designed a high-pressure test system, and this was some of the best engineering work I
+       have done and sparked an interest in pushing designs to their limit. I want to work in alternative energy, as it is the future of power generation and technologies like the fusion reactor is the cutting edge
+        of technology and because of this, I have started my own fusion project. Motorsports is another passion of mine, both as a spectator, and hopefully a competitor. </p>
+
+
+  <!-- <hr class="rbline"> -->
+
+  <p align="center"><img src="images/HD Video 300 str.gif" width="600"></p>
+
+  <!-- <hr class="rbline"> -->
+  <p><b>SITE NAVIGATION</b>... This site has a layout reminiscent of the webpages from before I was born, the 1990's. All the relevant information can be found on the page index. This site is heavily inspired by the website of Varmint Al. I recommend you check the page out; it is an interesting window into the internet of the past and Varmint Al's life -  
+    <a href="https://www.varmintal.com" target="_blank">VarmintAl.com </a>. Each paragraph has a title in <b>BOLD</b> that quickly identifies its subject, with the following content is on that topic.</p>
+
+  <p><b>CONTACT</b>-
+    Email: <a href="mailto:lucas.powell0@outlook.com">lucas.powell0@outlook.com</a>&nbsp;&nbsp;
+    Callsign: <span style="background-color: #49e949; color: #000000;">KE2GSU</span>&nbsp;&nbsp;
+    LinkedIn: <a href="www.linkedin.com/in/lucas-powell-b5g6" target="_blank">linkedin.com/in/lucas-powell-b5g6</a>
+  </p>
+
+  <hr class="rbline">
+
+  <p align="center">
+    <b>Thank you for visiting my portfolio.<br>
+    I hope you find something useful here.</b>
+  </p>
+
+  <p align="center">
+    
+    Last Updated:
+    <script>document.write(new Date().toLocaleDateString('en-US',{month:'2-digit',day:'2-digit',year:'numeric'}));</script>
+    <br>End of Page
+    <img src="images/lpBottom.png" width="100">
+  </p>
+
+</div>
+
+</body>
+</html>

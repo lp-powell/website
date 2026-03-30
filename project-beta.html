@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta charset="windows-1252">
+  <title>Lucas Powell - Tylok int</title>
+  <style>
+    body {
+      font-family: Times New Roman, serif;
+      background-image: url("images/brass.jpg");
+      background-repeat: repeat;
+      color: #000000;
+    }
+    a:link    { color: #0000ff; }
+    a:visited { color: #880000; }
+    a:hover   { color: #0000cc; }
+
+    table.nav {
+      border: 1px solid #000080;
+      border-collapse: collapse;
+      background-color: #ffffe1;
+      float: left;
+      margin-right: 14px;
+      margin-bottom: 8px;
+      width: 150px;
+    }
+    table.nav td {
+      border: 1px solid #000080;
+      padding: 3px 6px;
+    }
+    td.nav-header {
+      background-color: #0033cc;
+      text-align: center;
+    }
+    td.nav-subject {
+      background-color: #e6ffff;
+      text-align: center;
+    }
+    td.nav-links {
+      background-color: #ffffd7;
+      text-align: left;
+    }
+    td.nav-links a {
+      font-family: Arial, sans-serif;
+      font-size: small;
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    .rbline {
+      height: 4px;
+      background: linear-gradient(90deg, #001f5b, #0044cc, #4d9fff, #ffffff, #4d9fff, #0044cc, #001f5b);
+      border: none;
+      width: 540px;
+      max-width: 100%;
+      margin: 12px auto;
+      display: block;
+    }
+
+    .main-content { overflow: hidden; }
+
+    /* Project summary table */
+    table.project {
+      border: 1px solid #000080;
+      border-collapse: collapse;
+      background-color: #ffffe1;
+      width: 95%;
+      margin-bottom: 18px;
+    }
+    table.project td {
+      border: 1px solid #000080;
+      padding: 4px 8px;
+      font-size: small;
+      font-family: Arial, sans-serif;
+    }
+    td.project-header {
+      background-color: #0033cc;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: small;
+      font-family: Arial, sans-serif;
+    }
+    td.project-label {
+      background-color: #e6ffff;
+      font-weight: bold;
+      width: 140px;
+    }
+    td.project-value {
+      background-color: #ffffd7;
+    }
+
+    /* Image caption */
+    p.caption {
+      font-size: small;
+      font-family: Arial, sans-serif;
+      color: #333333;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════════
+     SIDEBAR — replace with fetch nav.html
+     if you have that set up
+     ══════════════════════════════════════ -->
+<div id="nav"></div>
+<script>
+  fetch("nav.html").then(r => r.text()).then(h => document.getElementById("nav").innerHTML = h);
+</script>
+
+
+<!-- ══════════════════════════════════════
+     MAIN CONTENT
+     ══════════════════════════════════════ -->
+<div class="main-content">
+
+  <p align="center">
+    <font color="#0000ff" face="Arial" size="6"><b><i>Tylok International</i></b></font><br>
+    <font face="Arial" size="4">December 2024 to August 2025</font>
+  </p>
+
+  <hr class="rbline">
+
+   <p><b>TYLOK</b>.... I worked at Tylok International as an engineering co-op intern from December 2024 to August 2025. I completed a multitude of tasks at Tylok, ranging from product design and validation to efficiency increases on the manufacturing floor. Tylok manufactures high pressure compression fittings and is the only manufacturer of NFPA 99 Compliant fittings. Working here was an amazing experience, and the freedom to work on the projects I felt the most interested in led me to explore and improve as an engineer. The following projects are the most impactful projects I worked on. I have limited information and photos on these projects because of my employment NDA.</p>
+
+  <hr class="rbline">
+
+  <!-- Background -->
+  <p><b>High Pressure Testing</b>.... The high pressure testing system was the most impactful project I contributed to during my time at Tylok International. The objective was to bring ASTM, ANSI, and ECE specification testing in-house, reducing outsourcing costs while gaining direct control over design validation. The system had to satisfy a wide range of test requirements — from cryogenic temperatures as low as -80°F up to 300°F, open flame exposure, and mechanical vibration, to the most demanding requirement of all: high pressure gas cycling.
+The central engineering challenge was designing a system capable of cycling nitrogen gas at pressures exceeding 9,000 psi continuously for hours at a time without interruption. Working alongside one other engineer, I developed a solution using a two-stage gas boosting architecture. Multiple high pressure supply tanks feed a pneumatically controlled boosting circuit that maintains a dedicated reservoir above 15,000 psi, ensuring there is always sufficient stored energy to rapidly charge a test specimen and sustain pressure through the full cycle without pressure drop compromising the test validity.
+The broader system was designed around a centralized control unit, allowing multiple independent tests to run simultaneously and making efficient use of the facility. Because many of the other specification tests operate at lower pressures or can use hydrostatic methods, this single high pressure nitrogen system serves as the backbone for a large portion of the overall test matrix. Additional equipment was sourced and integrated as part of the same initiative, including a vibration table, an environmental chamber for thermal cycling, two compression fitting fatigue machines, and a custom-designed leak detection system — together forming a comprehensive in-house testing capability that had previously required outside laboratories.</p>
+
+   <p align="center">
+    <img src="images/tyloktest.gif" width="700" border="1"><br>
+  </p>
+  <p class="caption" align="center">Prototype Hydrostatic Cycle Testing.</p>
+
+  <p><b>FEA and Consulting</b>.... I led an effort to set up a workflow to run finite element analysis on the compression fitting ferrule plastic deformation during initial tightening. This was to reduce the design turn around time, as each iteration to the design needed to be manufactured, surface and heat treated before the engineering team could test it. The FAE workflow was intended to reduce the number of designs tested by giving a preliminary result to allow some designs to be eliminated from consideration before prototypes were made. I did get a model to correctly evaluate the plastic deformation, but this approach had its limits, especially with the investment to teach an engineer the software, so I contacted some Ansys certified consultants to work on a plan to outsource the analysis and work with them to validate the workflow.</p>
+
+  <!-- The problem -->
+  <p><b>Quick Connect Assembly Tooling</b>.... I had designed an machines a series of tools for the assembly of size 6 and 8 quick connection fittings. This included a workstation to organize and house the parts and tools. The tools were all custom for the process, consisting of snap ring tools,  O-ring tools, part fixtures and crimping dies.</p>
+
+  <!-- The approach -->
+  <p><b>Crane and Mill DRO Repair</b>.... Myself, along a coworker, repaired a previous interns crane, as well as modified the initial design to prevent binding and reduce the bending of the sliding tracks. This project gave the crane a new life as previously it was not being used, proposing a genuine risk to the employees manually lifting heavy bins. The crane now works with some improvements to the design.</p>
+
+   <p align="center">
+    <img src="images/crane.gif" width="700" border="1"><br>
+  </p>
+  <p class="caption" align="center">Prototype Hydrostatic Cycle Testing.</p>
+
+
+  <p><b>Tool Drawings & Tool Trays</b>.... Updated tooling drawings to reflect customizations the tooling engineering had made. Also designed a modular tool tray system to work with the companies tooling vending machines.
+</p>
+
+
+  <p><b>Tylok May the 4th Starwars Video</b>....played darth vader as my breakout acting role. <a href="https://www.linkedin.com/posts/tylok_maythe4thbewithyou-starwarsday-tylokfittingsandvalves-ugcPost-7323358909967106048-tqiK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFLpiGEBBsd5MjC2PnlEuN0Z6FRe0efmXXY" target="_blank">video link</a></p>
+
+  <hr class="rbline">
+
+  <p align="center">
+    
+    Last Updated:
+    <script>document.write(new Date().toLocaleDateString('en-US',{month:'2-digit',day:'2-digit',year:'numeric'}));</script>
+    <br>End of Page
+    <img src="images/lpBottom.png" width="100">
+  </p>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta charset="windows-1252">
+  <title>Lucas Powell - BD</title>
+  <style>
+    body {
+      font-family: Times New Roman, serif;
+      background-image: url("images/steel.jpg");
+      background-repeat: repeat;
+      color: #000000;
+    }
+    a:link    { color: #0000ff; }
+    a:visited { color: #880000; }
+    a:hover   { color: #0000cc; }
+
+    table.nav {
+      border: 1px solid #000080;
+      border-collapse: collapse;
+      background-color: #ffffe1;
+      float: left;
+      margin-right: 14px;
+      margin-bottom: 8px;
+      width: 150px;
+    }
+    table.nav td {
+      border: 1px solid #000080;
+      padding: 3px 6px;
+    }
+    td.nav-header {
+      background-color: #0033cc;
+      text-align: center;
+    }
+    td.nav-subject {
+      background-color: #e6ffff;
+      text-align: center;
+    }
+    td.nav-links {
+      background-color: #ffffd7;
+      text-align: left;
+    }
+    td.nav-links a {
+      font-family: Arial, sans-serif;
+      font-size: small;
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    .rbline {
+      height: 4px;
+      background: linear-gradient(90deg, #001f5b, #0044cc, #4d9fff, #ffffff, #4d9fff, #0044cc, #001f5b);
+      border: none;
+      width: 540px;
+      max-width: 100%;
+      margin: 12px auto;
+      display: block;
+    }
+
+    .main-content { overflow: hidden; }
+
+    /* Project summary table */
+    table.project {
+      border: 1px solid #000080;
+      border-collapse: collapse;
+      background-color: #ffffe1;
+      width: 95%;
+      margin-bottom: 18px;
+    }
+    table.project td {
+      border: 1px solid #000080;
+      padding: 4px 8px;
+      font-size: small;
+      font-family: Arial, sans-serif;
+    }
+    td.project-header {
+      background-color: #0033cc;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: small;
+      font-family: Arial, sans-serif;
+    }
+    td.project-label {
+      background-color: #e6ffff;
+      font-weight: bold;
+      width: 140px;
+    }
+    td.project-value {
+      background-color: #ffffd7;
+    }
+
+    /* Image caption */
+    p.caption {
+      font-size: small;
+      font-family: Arial, sans-serif;
+      color: #333333;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════════
+     SIDEBAR — replace with fetch nav.html
+     if you have that set up
+     ══════════════════════════════════════ -->
+<div id="nav"></div>
+<script>
+  fetch("nav.html").then(r => r.text()).then(h => document.getElementById("nav").innerHTML = h);
+</script>
+
+
+<!-- ══════════════════════════════════════
+     MAIN CONTENT
+     ══════════════════════════════════════ -->
+<div class="main-content">
+
+  <p align="center">
+    <font color="#0000ff" face="Arial" size="6"><b><i>BD medical</i></b></font><br>
+    <font face="Arial" size="4">May 2024 to August 2024</font>
+  </p>
+
+  <hr class="rbline">
+
+
+  <!-- Background -->
+  <p><b>BD</b>.... I was responsible for helping the manufacturing floor with improvements through implementing new devices to aid floor workers. This included permanent equipment upgrades, guarding, operator tools, and process fixturing. I was also involved in a kaizen event, having to make rapid prototype improvements, leading to $50K in annual savings. One of the bigger projects I had over the internship was also a controlled fiber system. This device was designed and built to control the fiber used in the construction of a valvuloplasty balloon, improving user ergonomics and reducing waste.</p>
+
+  <hr class="rbline">
+
+  <p><b>Servo Controlled Fiber System</b>.... The goal of this project was to create a system to prevent the floor workers from getting repetition injuries from tying the thread in the manufacturing process. The solution I prototypes was a servo-controlled system that automatically spins the correct amount of thread needed and holds the thread tight as it is being used. It also had the capabilities to have Wi-Fi connected monitoring to get analytics on thread usage and process time. </p>
+
+
+   <p align="center">
+  <table align="center" border="0" cellspacing="10" cellpadding="0">
+    <tr>
+      <td align="center"><img src="images/sevbd1.jpg" width="400" border="1"></td>
+      <td align="center"><img src="images/sevbd2.jpg" width="400" border="1"></td>
+    </tr>
+  </table>
+</p>
+
+ <p><b>Kaizen Event</b>....  Participated in an internal Kaizen event focused on the 023 product line. One of the key contributions was designing a pressurized bladder clamp, replacing the current 14 bolt design with a cam lever design to reduce time and noise. A flush fixture was also developed to increase the capacity of the machine. Alongside these tooling designs, several broader process improvements were identified and implemented over the course of the event to reduce waste and improve flow on the line.</p>
+
+ 
+  <p align="center"><img src="images/fixt.jpg" width="400"></p>
+
+  <hr class="rbline">
+
+
+  <p align="center">
+    
+    Last Updated:
+    <script>document.write(new Date().toLocaleDateString('en-US',{month:'2-digit',day:'2-digit',year:'numeric'}));</script>
+    <br>End of Page
+    <img src="images/lpBottom.png" width="100">
+  </p>
+
+</div>
+
+</body>
+</html>

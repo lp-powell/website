@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta charset="windows-1252">
+  <title>Lucas Powell - Engineering</title>
+  <style>
+    body {
+      font-family: Times New Roman, serif;
+      background-image: url("images/brass.jpg");
+      background-repeat: repeat;
+      color: #000000;
+    }
+    a:link    { color: #0000ff; }
+    a:visited { color: #880000; }
+    a:hover   { color: #0000cc; }
+
+    table.nav {
+      border: 1px solid #000080;
+      border-collapse: collapse;
+      background-color: #ffffe1;
+      float: left;
+      margin-right: 14px;
+      margin-bottom: 8px;
+      width: 150px;
+    }
+    table.nav td {
+      border: 1px solid #000080;
+      padding: 3px 6px;
+    }
+    td.nav-header {
+      background-color: #0033cc;
+      text-align: center;
+    }
+    td.nav-subject {
+      background-color: #e6ffff;
+      text-align: center;
+    }
+    td.nav-links {
+      background-color: #ffffd7;
+      text-align: left;
+    }
+    td.nav-links a {
+      font-family: Arial, sans-serif;
+      font-size: small;
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    .rbline {
+      height: 4px;
+      background: linear-gradient(90deg, #001f5b, #0044cc, #4d9fff, #ffffff, #4d9fff, #0044cc, #001f5b);
+      border: none;
+      width: 540px;
+      max-width: 100%;
+      margin: 12px auto;
+      display: block;
+    }
+
+    .main-content { overflow: hidden; }
+
+    /* Project summary table */
+    table.project {
+      border: 1px solid #000080;
+      border-collapse: collapse;
+      background-color: #ffffe1;
+      width: 95%;
+      margin-bottom: 18px;
+    }
+    table.project td {
+      border: 1px solid #000080;
+      padding: 4px 8px;
+      font-size: small;
+      font-family: Arial, sans-serif;
+    }
+    td.project-header {
+      background-color: #0033cc;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: small;
+      font-family: Arial, sans-serif;
+    }
+    td.project-label {
+      background-color: #e6ffff;
+      font-weight: bold;
+      width: 120px;
+    }
+    td.project-value {
+      background-color: #ffffd7;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════════
+     SIDEBAR NAV TABLE
+     ══════════════════════════════════════ -->
+<div id="nav"></div>
+<script>
+  fetch("nav.html").then(r => r.text()).then(h => document.getElementById("nav").innerHTML = h);
+</script>
+
+
+<!-- ══════════════════════════════════════
+     MAIN CONTENT
+     ══════════════════════════════════════ -->
+<div class="main-content">
+
+  <p align="center">
+    <font color="#0000ff" face="Arial" size="6"><b><i>Engineering</i></b></font><br>
+    <font face="Arial" size="4">Projects &amp; Work</font>
+  </p>
+
+  <hr class="rbline">
+
+  <p><b>OVERVIEW</b>.... This page covers the engineering projects both
+professional and personal, completed and ongoing, along with topics and technologies in the
+world of engineering that are worth paying attention to. More details about specific projects can be found on their project page. 
+Think of this less as a portfolio and more
+as a window into what drives the work, and what I just find interesting. </p>
+
+  <p align="center"><img src="images/fire2.jpg" width="500"></p>
+
+  <hr class="rbline">
+
+  <!-- ── PROJECT 1 ── -->
+  <p><b>Engineering Resources</b>.... The following resources have been the most useful in the engineering process — providing
+critical insight, guidance, and information that made a real difference. There is no point
+in gatekeeping knowledge that could help the next person, so here are the ones worth knowing about.
+ </p>
+
+  <table class="project" cellspacing="0" cellpadding="4">
+    <tr>
+
+    </tr>
+    <tr>
+      <td class="project-label">Books</td>
+      <td class="project-value">Shigleys (Obviously), Machinery's Handbook, Desk Ref, Fundamentals of Machine Component Design, Fundamentals of Heat and Mass Transfer, CRC Handbook of Chemistry and Physics , Any languages or products documentation- these can just have the solution to your integration hell, Mark's Standard Handbook for Mechanical Engineers</td>
+    </tr>
+    <tr>
+      <td class="project-label">Software</td>
+      <td class="project-value">CAD (NX, Fusion, Soldiworks - there all the same), FEA - LS-dyna / Ansys - Simscale (free!), IDE - A well setup IDE makes programming less painful, falstad, Python- becasue why would you ever pay for MATLAB </td>
+    </tr>
+    <tr>
+      <td class="project-label">Webpages</td>
+      <td class="project-value"> Tinywow.com, NIST.gov, eFunda.com, WolframAlpha / Desmos, Mcmaster Carr, Digikey, Anna's Archive</td>
+    </tr>
+  
+  </table>
+
+
+
+  <!-- ── FUTURE PROJECTS ── -->
+  <p><b>To Be Continued</b>.... A few things that are not yet started but are in the plans. I either have a lack of time, money or both preventing me from starting these.</p>
+
+  <ul>
+    <li><b>Custom Skateboard Mold</b> &mdash; I want to CNC route a custom mold to lay my own skateboard decks, possibly make carbon fiber re-enforced boards</li><br>
+    <li><b>EDC Leatherman</b> &mdash; Design and make a leatherman that only has the tools that I use consistently and add replaceable blades</li><br>
+    <li><b>ARA Stage Rally Car LFWD</b> &mdash; Build a ARA spec rally car to compete in a national rally event</li><br>
+    <li><b>Mountian bike</b> &mdash; Make a bespoke full suspention mountian bike with geometry that best suits me. Welded aluminium frame, 150-140 mm front rear travel, 29".</li><br>
+    <li><b>Buy and Delete LinkedIn</b> &mdash; This is for the good of the world  </li>
+
+</ul>
+
+  <hr class="rbline">
+
+<p align="center">
+    
+    Last Updated:
+    <script>document.write(new Date().toLocaleDateString('en-US',{month:'2-digit',day:'2-digit',year:'numeric'}));</script>
+    <br>End of Page
+    <img src="images/lpBottom.png" width="100">
+  </p>
+
+</div>
+
+</body>
+</html>

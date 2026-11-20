@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <meta charset="windows-1252">
+  <title>Lucas Powell - CWRUChips</title>
+  <style>
+    body {
+      font-family: Times New Roman, serif;
+      background-image: url("images/copper2.jpg");
+      background-repeat: repeat;
+      color: #000000;
+    }
+    a:link    { color: #0000ff; }
+    a:visited { color: #880000; }
+    a:hover   { color: #0000cc; }
+
+    table.nav {
+      border: 1px solid #000080;
+      border-collapse: collapse;
+      background-color: #ffffe1;
+      float: left;
+      margin-right: 14px;
+      margin-bottom: 8px;
+      width: 150px;
+    }
+    table.nav td {
+      border: 1px solid #000080;
+      padding: 3px 6px;
+    }
+    td.nav-header {
+      background-color: #0033cc;
+      text-align: center;
+    }
+    td.nav-subject {
+      background-color: #e6ffff;
+      text-align: center;
+    }
+    td.nav-links {
+      background-color: #ffffd7;
+      text-align: left;
+    }
+    td.nav-links a {
+      font-family: Arial, sans-serif;
+      font-size: small;
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    .rbline {
+      height: 4px;
+      background: linear-gradient(90deg, #001f5b, #0044cc, #4d9fff, #ffffff, #4d9fff, #0044cc, #001f5b);
+      border: none;
+      width: 540px;
+      max-width: 100%;
+      margin: 12px auto;
+      display: block;
+    }
+
+    .main-content { overflow: hidden; }
+
+    /* Project summary table */
+    table.project {
+      border: 1px solid #000080;
+      border-collapse: collapse;
+      background-color: #ffffe1;
+      width: 95%;
+      margin-bottom: 18px;
+    }
+    table.project td {
+      border: 1px solid #000080;
+      padding: 4px 8px;
+      font-size: small;
+      font-family: Arial, sans-serif;
+    }
+    td.project-header {
+      background-color: #0033cc;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: small;
+      font-family: Arial, sans-serif;
+    }
+    td.project-label {
+      background-color: #e6ffff;
+      font-weight: bold;
+      width: 140px;
+    }
+    td.project-value {
+      background-color: #ffffd7;
+    }
+
+    /* Image caption */
+    p.caption {
+      font-size: small;
+      font-family: Arial, sans-serif;
+      color: #333333;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════════
+     SIDEBAR — replace with fetch nav.html
+     if you have that set up
+     ══════════════════════════════════════ -->
+<div id="nav"></div>
+<script>
+  fetch("nav.html").then(r => r.text()).then(h => document.getElementById("nav").innerHTML = h);
+</script>
+
+
+<!-- ══════════════════════════════════════
+     MAIN CONTENT
+     ══════════════════════════════════════ -->
+<div class="main-content">
+
+  <p align="center">
+    <font color="#0000ff" face="Arial" size="6"><b><i>CWRUChips</i></b></font><br>
+    <font face="Arial" size="4">June 2023 to present</font>
+  </p>
+
+  <hr class="rbline">
+
+  <!-- Background -->
+  <p><b>DESCRIPTION</b>.... I am the technical lead for CWRUChips as well as the lead engineer for the thin film deposition project.
+     CWRUChips is a student-run design club that is part of the Hackerfab initiative with about 30 members.
+      The goal of the club is to create nanofabrication tools with open-source designs. The club has already constructed a lithostepper and a spincoater.
+       The current club project is thin film deposition with both thermal evaporation and magnetron sputtering.</p>
+
+    <p>More information on the team can be found here: <a href="https://cwruhackerfab.netlify.app/" target="_blank">cwruhackerfab.netlify.app </a></p>
+
+
+  <hr class="rbline">
+
+  <p align="center">
+    <br>End of Page
+    <img src="images/lpBottom.png" width="100">
+  </p>
+
+</body>
+</html>
